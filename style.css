@@ -5,13 +5,14 @@
     padding: 0;
     margin: 0;
 }
-@font-face {
+/* @font-face {
     font-family: 'Harry Potter';
     src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
-  }
+  } */
 body {
    
-    /* font-family: 'Harry P','Lumos'; */
+    font-family: 'Harry P';
+    letter-spacing: 2px;
     /* font-family: 'Lumos', arial; */
 }
 
