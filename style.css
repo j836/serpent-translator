@@ -5,11 +5,10 @@
     padding: 0;
     margin: 0;
 }
-
 @font-face {
-    font-family: 'Harry P';
-    src:url('http://www.fontsaddict.com/fontface/magic-school-one.ttf');
-}
+    font-family: 'Harry Potter';
+    src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
+  }
 body {
    
     /* font-family: 'Harry P','Lumos'; */
