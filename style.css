@@ -9,6 +9,13 @@
     font-family: 'Harry Potter';
     src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
   } */
+
+  @font-face {
+    font-family: 'Harry Potter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Harry Potter Regular'), url('HARRP___.woff') format('woff');
+    }
 body {
    
     font-family: 'Harry P';
@@ -117,6 +124,15 @@ img.bg {
 @media (min-width : 454px) and (max-width : 1026px) {
     /* html {
         font-size: 62.5%;
+    } */
+
+    .about-header {
+        position: relative;
+        left: 5%;
+       
+    }
+
+}        font-size: 62.5%;
     } */
 
     .about-header {
