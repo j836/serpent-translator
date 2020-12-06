@@ -5,21 +5,24 @@
     padding: 0;
     margin: 0;
 }
+
+
 /* @font-face {
     font-family: 'Harry Potter';
     src: url('http://www.fontsaddict.com/fontface/harry-potter.TTF');
   } */
 
-  @font-face {
+  /* @font-face {
     font-family: 'Harry Potter Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Harry Potter Regular'), url('HARRP___.woff') format('woff');
-    }
+    } */
 body {
    
-    font-family: 'Harry P';
+      font-family: 'Harry P';
     letter-spacing: 2px;
+    overflow-x: hidden;
     /* font-family: 'Lumos', arial; */
 }
 
@@ -54,24 +57,45 @@ img.bg {
     text-align: center;
 
 }
+.enter-text {
+    font-size: 5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 120%;
+    left: 30%;
+}
 
-.txt {
+#ip{
     /* margin: auto;
     padding: 2rem;
     display: flex;
     justify-content: center;
     background: transparent;
     color: white; */
-
+    position: absolute;
+    top:140%;
+    left: 5%;
+    background:transparent;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    font-size:3rem;
+    width: 80%;
+    height: 30%;
+    font-family: 'Harry P';
 }
 
-.txt::placeholder {
-    font-size: 2rem;
-    color: white;
+#txt::placeholder {
+    font-size: 3rem;
+    color: black;
 }
 
 .translate-btn {
-    padding: 1rem;
+    font-family: 'Harry P';
+    font-size: 2rem;
+    padding:1rem  2rem;
     background-color: blue;
     color: whitesmoke;
     border-radius: 0.5rem;
@@ -79,11 +103,33 @@ img.bg {
     justify-content: center;
     margin: 2rem 1rem;
     align-items: center;
-    position: relative;
-    left: 16vw;
+    position: absolute;
+    left: 45%;
+    top:180%;
 }
 
-
+#op {
+    position: absolute;
+    top:220%;
+    left: 5%;
+    background:transparent;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    font-size:3rem;
+    width: 80%;
+    height: 30%;
+    font-family: 'Harry P';
+}
+.serp-title {
+    font-size: 5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 200%;
+    left: 20%;
+}
 /* .about {
     background-color: transparent;
     position: relative;
@@ -101,6 +147,15 @@ img.bg {
     left: 50%;
 }
 
+.about-content {
+    position: absolute;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin:0rem 2rem;
+    left:40%;
+}
 @media screen and (max-width : 412px) {
     html {
         font-size:62.5%;
@@ -117,14 +172,35 @@ img.bg {
         
     }
 
+    .about-content {
+        left:3%;
+    }
+
+    .enter-text {
+        left:7%;
+    }
+
+    #ip {
+        width: 75vw;
+        left: 2%;
+    }
+
+    .translate-btn {
+        left:35%;
+    }
+
+    #op {
+        margin:5rem 0rem;
+    }
+
 
 }
 
 
 @media (min-width : 454px) and (max-width : 1026px) {
-    /* html {
+     html {
         font-size: 62.5%;
-    } */
+    } 
 
     .about-header {
         position: relative;
@@ -132,13 +208,6 @@ img.bg {
        
     }
 
-}        font-size: 62.5%;
-    } */
+    
 
-    .about-header {
-        position: relative;
-        left: 5%;
-       
-    }
-
-}
+}      
