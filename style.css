@@ -1,0 +1,121 @@
+@import url('http://www.fontsaddict.com/fontface/magic-school-one.ttf');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+   
+    font-family: 'Harry P';
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 675px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+
+.container {
+    margin: 8rem;
+    position: relative;
+    color: #ffffff;
+    font-size: 14rem;
+    line-height: 0.9;
+    text-align: center;
+
+}
+
+.txt {
+    /* margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    color: white; */
+    
+}
+
+.txt::placeholder {
+    font-size: 2rem;
+    color: white;
+}
+
+.translate-btn {
+    padding: 1rem;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 1rem;
+    align-items: center;
+    position: relative;
+    left: 16vw;
+}
+
+
+/* .about {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+} */
+
+.about-header {
+    position: relative;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:1em;
+    left: 50%;
+}
+
+@media screen and (max-width : 412px) {
+    html {
+        font-size:62.5%;
+        /* width: 100vw; */
+    }
+    
+    
+    .about-header {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 5%;
+        
+        
+    }
+
+
+}
+
+
+@media (min-width : 454px) and (max-width : 1026px) {
+    /* html {
+        font-size: 62.5%;
+    } */
+
+    .about-header {
+        position: relative;
+        left: 5%;
+       
+    }
+
+}
